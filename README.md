@@ -1,6 +1,6 @@
-# Service Template
+# Waveform Service
 
-This is a simple GoLang service template that utilizes Echo. It is meant to serve as the foundation for a variety of microservices.
+This is our waveform service 
 
 ## Building the Project
 
@@ -12,15 +12,15 @@ To run the project run:
 
 To run on Docker first build the Docker image: 
 
-`docker build -t service-template .`
+`docker build -t waveform-service .`
 
 To specify what version of Go you would like to use with the Docker image:
 
-`docker build --build-arg GO_VERSION=[YOUR_VERSION] -t service-template .`
+`docker build --build-arg GO_VERSION=[YOUR_VERSION] -t waveform-service .`
 
 To run the Docker image: 
 
-`docker run -d -p 8888:8888 service-template`
+`docker run -d -p 8888:8888 waveform-service`
 
 ## Compiling on ACT 
 
