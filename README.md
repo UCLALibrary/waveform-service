@@ -1,6 +1,6 @@
 # Waveform Service
 
-This is our waveform service for our Pairtree project
+This is our waveform service for our A/V pipeline project
 
 ## Building the Project
 
