@@ -2,9 +2,9 @@
 ## A Dockefile for UCLA Library's GoLang microservices.
 ##
 
-ARG GO_VERSION=1.22.1
-ARG ALPINE_VERSION=3.19
-ARG SERVICE_NAME="service-template"
+ARG GO_VERSION=1.22.4
+ARG ALPINE_VERSION=3.20
+ARG SERVICE_NAME="waveform-service"
 
 ##
 ## STEP 1 - BUILD

@@ -16,7 +16,7 @@ import (
 func TestApp(t *testing.T) {
 	// Define the container request
 	req := testcontainers.ContainerRequest{
-		Image:        "service-template",
+		Image:        "waveform-service",
 		ExposedPorts: []string{"8888/tcp"},
 		SkipReaper:   true,
 		WaitingFor:   wait.ForHTTP("/").WithPort("8888/tcp"),
@@ -64,7 +64,7 @@ func TestApp(t *testing.T) {
 	// Any requeset body will work since POST requests are not currently allowed
 	requestBody := []byte(`{"key": "value"}`)
 
-	resp, err = client.Post("http://" + host + ":" + strconv.Itoa(port.Int()) + "/", "application/json", bytes.NewBuffer(requestBody))
+	resp, err = client.Post("http://"+host+":"+strconv.Itoa(port.Int())+"/", "application/json", bytes.NewBuffer(requestBody))
 	if err != nil {
 		t.Fatal(err)
 	}
