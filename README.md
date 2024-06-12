@@ -1,6 +1,6 @@
 # Waveform Service
 
-This is our waveform service for our A/V pipeline project
+This is our waveform service for our A/V pipeline project.
 
 ## Building the Project
 
@@ -34,4 +34,4 @@ Now that ACT is installed, you can see the workflow run locally by running:
 
 ## Contact
 
-If you have any questions or suggestions, feel free to [open a ticket](https://github.com/UCLALibrary/service-template/issues) on project's GitHub repo.
+If you have any questions or suggestions, feel free to [open a ticket](https://github.com/UCLALibrary/waveform-service/issues) on project's GitHub repo.
